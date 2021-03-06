@@ -1,5 +1,7 @@
 package activities
 
+import android.content.Context
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -27,12 +29,13 @@ class MainActivity : AppCompatActivity() {
         al.add("java");
 
         //choose your favorite adapter
-        arrayAdapter =  ArrayAdapter(this, R.layout.item, R.id.helloText, al )
+        arrayAdapter = ArrayAdapter(this, R.layout.item, R.id.helloText, al)
 
         //set the listener and the adapter
         frame.adapter = arrayAdapter;
-        frame.setFlingListener(object: SwipeFlingAdapterView.onFlingListener {
-            override fun removeFirstObjectInAdapter() { Log.d("LIST", "removed object!");
+        frame.setFlingListener(object : SwipeFlingAdapterView.onFlingListener {
+            override fun removeFirstObjectInAdapter() {
+                Log.d("LIST", "removed object!");
                 al.removeAt(0);
                 arrayAdapter?.notifyDataSetChanged();
             }
@@ -55,6 +58,13 @@ class MainActivity : AppCompatActivity() {
             override fun onScroll(p0: Float) {
             }
 
-    })
+        })
+    }
+
+    companion object {
+        fun newIntent(context: Context?) = Intent(context, MainActivity::class.java)
     }
 }
+
+
+
