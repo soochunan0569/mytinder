@@ -1,5 +1,4 @@
 package activities
-
 import activities.MainActivity
 import android.content.Context
 import android.content.Intent
