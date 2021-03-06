@@ -1,10 +1,6 @@
-package activities
+package com.example.activities
 
 
-import activities.LoginActivity
-import activities.SignupActivity
-import android.content.Context
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View

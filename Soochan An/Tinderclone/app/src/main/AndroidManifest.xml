@@ -9,19 +9,19 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name="activities.SignupActivity"
+        <activity android:name="com.example.activities.SignupActivity"
                   android:screenOrientation="portrait"
                   android:windowSoftInputMode="adjustResize">
         </activity>
-        <activity android:name="activities.LoginActivity"
+        <activity android:name="com.example.activities.LoginActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize"/>
 
-        <activity android:name="activities.MainActivity"
+        <activity android:name="com.example.activities.MainActivity"
                   android:screenOrientation="portrait"
                   android:windowSoftInputMode="adjustResize"/>
 
-        <activity android:name="activities.StartupActivity"
+        <activity android:name="com.example.activities.StartupActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize">
 

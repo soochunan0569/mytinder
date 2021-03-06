@@ -1,6 +1,4 @@
-package activities
-
-import activities.MainActivity
+package com.example.activities
 import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -8,17 +6,15 @@ import android.os.Bundle
 import android.view.View
 import com.example.tinderclone.R
 
-class SignupActivity : AppCompatActivity() {
+class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_signup)
+        setContentView(R.layout.activity_login)
     }
-
-    fun onSignup(v:View) {
-            startActivity(MainActivity.newIntent(this))
+    fun onLogin(v:View) {
+        startActivity(MainActivity.newIntent(this))
     }
     companion object {
-        fun newIntent(context: Context?) = Intent(context, SignupActivity::class.java)
+        fun newIntent(context: Context?) = Intent(context, LoginActivity::class.java)
     }
 }
-

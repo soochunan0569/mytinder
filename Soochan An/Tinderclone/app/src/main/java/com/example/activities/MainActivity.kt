@@ -1,4 +1,4 @@
-package activities
+package com.example.activities
 
 import android.content.Context
 import android.content.Intent
